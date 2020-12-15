@@ -1,0 +1,146 @@
+{
+    "gems": [
+        {
+            "_id":"7dvk29wd7ShnQqLRQ",
+            "name": "Bulova Gold Steel Watch",
+            "description": "Beautiful Detailed with Authentic Crystals from Swarovski, This Striking Collection Makes a Brilliant Fashion Statement",
+            "long_description":"From the Crystal Collection In gold-tone stainless steel. Embellished with 318 Swarovski Crystals on bezel, blue dial and bracelet, six-hand multi-feature movement, luminous hands and markers, mineral glass, gold-tone stainless bracelet with deployment closure, and water resistance to 30 meters.",
+            "price": 9134,
+            "canPurchase": true,
+            "favorite":true,
+            "times_sold": 23,
+            "sizes":["large", "medium", "small"],
+            "specs": {
+                "brand": "Bulova",
+                "band_material": "Stainless steel",
+                "clock_movement": "Quartz",
+                "band_color": "Bicolor"
+            },
+            "images": [
+                "images/clocks/clock-01.jpg",
+                "images/clocks/clock-02.jpg",
+                "images/clocks/clock-03.jpg"
+            ],
+            "reviews": [
+                {
+                    "stars": 5,
+                    "body": "I love this watch!",
+                    "author": "joe@example.org",
+                    "createdOn": 1397490980837
+                },
+                {
+                    "stars": 1,
+                    "body": "This watch sucks.",
+                    "author": "tim@example.org",
+                    "createdOn": 1397490980837
+                }
+            ]
+        },
+        {
+            "_id":"Tqt4NDxthgR7HKBq7",
+            "name": "Bulova Diamond Watch",
+            "description": "Watch Sizing GuideIt's your time to shine in this Bulova Crystal - 96C134 watch. ",
+            "long_description":"Multi-function dress watch boldly embellished with 300 Swarovski Crystals on the stainless steel case and bracelet, and the pave set six-hand silver white dial. Flat mineral crystal, deployant closure, quartz movement, and water resistance to 30 meters.",
+            "price": 8312.19,
+            "canPurchase": true,
+            "favorite":true,
+            "times_sold": 10,
+            "sizes":["large", "medium", "small"],
+            "specs": {
+                "brand": "Bulova",
+                "band_material": "Stainless steel",
+                "clock_movement": "Quartz",
+                "band_color": "Silver"
+            },
+            "images": [
+                "images/clocks/clock-05.jpg",
+                "images/clocks/clock-04.jpg",
+                "images/clocks/clock-06.jpg"
+            ],
+            "reviews": [
+                {
+                    "stars": 3,
+                    "body": "I think this watch was just OK.",
+                    "author": "JimmyDean@example.org",
+                    "createdOn": 1397490980837
+                },
+                {
+                    "stars": 4,
+                    "body": "It's a beautiful watch",
+                    "author": "gemsRock@example.org",
+                    "createdOn": 1397490980837
+                }
+            ]
+        },
+        {
+            "_id":"iuLTbSuW3n43wiXGr",
+            "name": "Michael Kors Darci",
+            "description": "The Michael Kors Darci watch features an allover pave silver dial and is complete with a pave-embellished case and seven-link bracelet.",
+            "price": 5121,
+            "favorite":false,
+            "times_sold": 12,
+            "long_description":"The Michael Kors Darci watch features a crystal-filled silver dial and is completed with a crystal-embellished case and a seven-link extension.",
+            "sizes":["large", "medium", "small"],
+            "specs": {
+                "brand": "Michael Kors",
+                "band_material": "Stainless steel",
+                "clock_movement": "Quartz",
+                "band_color": "Silver"
+            },
+            "images": [
+                "images/clocks/clock-07.jpg",
+                "images/clocks/clock-08.jpg",
+                "images/clocks/clock-09.jpg"
+            ],
+            "reviews": [
+                {
+                    "stars": 4,
+                    "body": "This watch is awesome",
+                    "author": "turtleguyy@example.org",
+                    "createdOn": 1397490980837
+                },
+                {
+                    "stars": 3,
+                    "body": "It's beautiful but it's too expensive",
+                    "author": "LouisW407@example.org",
+                    "createdOn": 1397490980837
+                }
+            ]
+        },
+        {
+            "_id":"VUhMbJ0IyHjj9zGkR",
+            "name": "MAD Paris",
+            "description": "Mad Paris x Richard Mille RM 67-01 sapphire watch in Mad Paris sapphire crystal.",
+            "price": 19279564.77,
+            "favorite":false,
+            "times_sold": 15,
+            "long_description":"Mad Paris x Richard Mille RM 67-01 sapphire watch in Mad Paris sapphire crystal. It is a fabulous watch with which you will stand out anywhere thanks to its precious stones. It is without a doubt the best of the best in watches",
+            "sizes":["large", "medium", "small"],
+            "specs": {
+                "brand": "Richard Mille",
+                "band_material": "Sapphire and white gold",
+                "clock_movement": "Sapphire",
+                "band_color": "Black"
+            },
+            "images": [
+                "images/clocks/clock-11.jpg",
+                "images/clocks/clock-10.jpg",
+                "images/clocks/clock-12.jpg"
+            ],
+            "reviews": [
+                {
+                    "stars": 4,
+                    "body": "This watch is awesome",
+                    "author": "turtleguyy@example.org",
+                    "createdOn": 1397490980837
+                },
+                {
+                    "stars": 3,
+                    "body": "It's beautiful but it's too expensive",
+                    "author": "LouisW407@example.org",
+                    "createdOn": 1397490980837
+                }
+            ]
+        }
+    ]
+}

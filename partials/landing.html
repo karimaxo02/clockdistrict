@@ -1,0 +1,310 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./images/bck/mb-bg-fb-24.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">Encuentra los mejores relojes, de la mejor calidad</h1>
+                <h4>En CLOCK DISTRICT encontraras los mejores relojes, de las mejores marcas para cualquier ocasion
+                    y para diversos gustos</h4>
+                <br>
+                <a href="https://www.youtube.com/watch?v=o1g8bUtFChw" target="_blank"
+                    class="btn btn-success btn-raised btn-lg">
+                    <i class="fa fa-play-circle"> Mira nuestro video</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card card-raised card-carousel">
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0"></li>
+                    <li data-target="#carousel" data-slide-to="1" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-item-left">
+                        <img src="./images/bck/unnamed.jpg" alt="firstSlide" class="d-block w100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>
+                                <i class="material-icons">loyalty</i>
+                                Promo 1
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-next carousel-item-left">
+                        <img src="./images/bck/bannerwatches800.jpg" alt="firstSlide" class="d-block w100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>
+                                <i class="material-icons">loyalty</i>
+                                Promo 2
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carousel" class="corousel-control-prev" role="button" data-slide="prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carousel" class="corousel-control-next" role="button" data-slide="next">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main main-raised mt-auto" ng-controller="Products as prods">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="title">Productos mas vendidos</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="float:left" ng-repeat="p in prods.products" ng-click="prods.go(p._id)">
+                <div class="card card-nav-tabs">
+                    <h4 class="card-header card-header-info">
+                        {{p.specs.brand}}
+                    </h4>
+                    <img ng-src="{{p.images[0]}}" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">{{p.name}}</h4>
+                        <p class="card-text">{{p.price | currency}}</p>
+                        <a class="btn btn-info">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="row no-grutters">
+                            <div class="col-md-4">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSw29VppRpD0HVlh0OgXr8UTmz3d0E6_E-iwRSf11dx3iLU_mMMJv6Z-KKFelEtO5Fc2bNrA&usqp=CAc"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">EUROPEOS 2020</p>
+                                    <h4 class="card-title">
+                                        Los mejores relojes Europeos del 2020
+                                    </h4>
+                                    <button class="btn btn-info">Ver mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="row no-grutters">
+                            <div class="col-md-4">
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">MEXICANOS 2020</p>
+                                    <h4 class="card-title">
+                                        Los mejores relojes Mexicanos del 2020
+                                    </h4>
+                                    <button class="btn btn-info">Ver mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section text-center">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="title">Hablemos de nuestro producto</h2>
+                    <h5 class="description">Somos una empresa totalmente mexicada la cual se dedica a la venta de
+                        relojes de alta gama dentro del pais y fuera del pais
+                    </h5>
+                </div>
+            </div>
+            <div class="features">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="material-icons">chat</i>
+                            </div>
+                            <h1 class="info-title">Platica con nosotros</h1>
+                            <p>Si tienes alguna duda sobre nuestros productos o algun problema con tu entrega
+                                o producto ya entregado platica con nosotros en nuestro chat para darte el mejor
+                                servicio al cliente que haya existido
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-info">
+                                <i class="material-icons">verified_user</i>
+                            </div>
+                            <h1 class="info-title">Compras verificadas</h1>
+                            <p>Tenemos la mejor entrega del mercado, contamos con entregas nacionales e
+                                internacionales
+                                asi como tambien usuarios que nos respaldan. Compra con nosotros
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="material-icons">watch_later</i>
+                            </div>
+                            <h1 class="info-title">Entregas Comprobadas</h1>
+                            <p>Te aseguramos tu entrega del producto hasta la comodidad de tu hogar sin
+                                complicaciones
+                                y con los mejores cuidados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <h2 class="title">
+                Este es nuestro equipo
+            </h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="./images/profile/director.jpg" alt=""
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title text-muted">Karim Cardona
+                                    <br>
+                                    <small class="card-description">Director de la empresa</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Soy el director ejecutivo de la empresa, yo me encargo de todo lo que tiene
+                                        que ver con el trato con las empresas de relojes,
+                                        me encargo de cerrar tratos con las mejores marcas, estoy a disposicion de
+                                        cualquier persona y empresa que quiera colaborar con nosotros
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#director" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="#director" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-instagram"></i></a>
+                                    <a href="#director" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="./images/profile/gerente.jpg" alt=""
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title text-muted">Axel Delgado
+                                    <br>
+                                    <small class="card-description">Gerente de la empresa</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Soy el encargado de la tienda en general, mi principal trabajo es ver que
+                                        todo en la tienda este
+                                        en orden, atender a los clientes que nos visitan, asi como tambien abrir y
+                                        cerrar la tienda.
+                                        Estoy a su disposicion para atenderlos con mucho gusto.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#son" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                    <a href="#son" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="./images/profile/diseñador.jpg" alt=""
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title text-muted">Luis Lozoya
+                                    <br>
+                                    <small class="card-description">Diseñador y gerente</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Soy el encargado de todos los diseños de nuestra tienda, mi trabajo
+                                        principal es crear
+                                        contenido visual atractivo para todos nuestros clientes.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#mom" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                    <a href="#mom" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-instagram"></i></a>
+                                    <a href="#mom" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-contacts">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="text-center title">¿Tienes alguna duda?</h2>
+                    <h4 class="text-center description">Cualquier duda de nuestros productos sientete libre de
+                        enviarnos un mensaje para estar en contacto.</h4>
+                    <form action="" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Tu nombre</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Tu correo</label>
+                                    <input type="email" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="bmd-label-floating">Pon tu mensaje</label>
+                            <textarea name="" id="message" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ml-auto mr-auto text-center">
+                                <button class="btn btn-success btn-raised">
+                                    <i class="material-icons">
+                                        send
+                                    </i>
+                                    Enviar mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="text-center">
+    <h2 class="title">Products</h3>
+</div>
+
+<div class="row" ng-controller="Products as prods">
+    <div class="col-lg-8 mx-auto">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">dns</i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Watch Name" ng-model="watch">
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group bmd-form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">local_offer</i>
+                            </span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Watch Price" ng-model="price">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="p in prods.products | filter:watch | filter:price"
+                ng-click="prods.go(p._id)">
+                <div class="media align-items-lg-center flex-column flex-lg-row">
+                    <div class="media-body order-2 order-lg-1">
+                        <h3 class="mt-0 font-weight-bold mb-2"> {{p.name}}</h3>
+                        <p class="font-italic text-muted mb-0">{{p.description}}</p>
+                        <div class="d-flex align-items-center justify-content-between mt-1">
+                            <h6 class="font-weight-bold my-1">{{p.price | currency}}</h6>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item m-0"><i class="fa fa-star text-info"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa fa-star text-info"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa fa-star text-info"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa fa-star text-info"></i></li>
+                                <li class="list-inline-item m-0"><i class="fa fa-star- text-gray"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img ng-src="{{p.images[0]}}" alt="Gems placeholder" width="200"
+                        class="ml-lg-5 order-1 order-lg-2 img-raised rounded img-fluid" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
